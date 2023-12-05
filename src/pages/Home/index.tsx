@@ -15,11 +15,11 @@ export const Home = () => {
             <div className='w-10/12 '>
                 <div className='relative'>
                     <img src={base} alt='' className='w-full absolute z-10' />
-                    <img src={`/src/assets/images/Pisos/${imagenes.pisos}.png`} alt='' className='w-full absolute z-20' />
-                    <img src={`/src/assets/images/Muros/${imagenes.muros}.png`} alt='' className='w-full absolute z-20' />
-                    <img src={`/src/assets/images/Salpicaderos/${imagenes.salpicaderos}.png`} alt='' className='w-full absolute z-20' />
-                    <img src={`/src/assets/images/Mueble Alto/${imagenes.mueblealto}.png`} alt='' className='w-full absolute z-20' />
-                    <img src={`/src/assets/images/Mueble Bajo/${imagenes.mueblebajo}.png`} alt='' className='w-full absolute z-20' />
+                    <img src={`src/assets/images/Pisos/${imagenes.pisos}.png`} alt='' className='w-full absolute z-20' />
+                    <img src={`src/assets/images/Muros/${imagenes.muros}.png`} alt='' className='w-full absolute z-20' />
+                    <img src={`src/assets/images/Salpicaderos/${imagenes.salpicaderos}.png`} alt='' className='w-full absolute z-20' />
+                    <img src={`src/assets/images/Mueble Alto/${imagenes.mueblealto}.png`} alt='' className='w-full absolute z-20' />
+                    <img src={`src/assets/images/Mueble Bajo/${imagenes.mueblebajo}.png`} alt='' className='w-full absolute z-20' />
                 </div>
             </div>
         </MainLayout>
