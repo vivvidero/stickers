@@ -12,10 +12,10 @@ export const Home = () => {
     return (
         <MainLayout>
             <Outlet />
-            <div className='w-10/12 '>
-                <div className='relative'>
-                    <img src={base} alt='' className='w-full absolute z-10' />
-                    <img src={`/assets/images/Pisos/${imagenes.pisos}.png`} alt='' className='w-full absolute z-20' />
+            <div className='w-full h-screen flex  justify-center py-20 bg-vivvi  rounded-2xl'>
+                <div className='w-3/4 h-full relative rounded-2xl overflow-hidden'>
+                    <img src={base} alt='' className='w-full object-cover absolute z-10' />
+                    <img src={`/assets/images/Pisos/${imagenes.pisos}.png`} alt='' className='w-full  absolute z-20' />
                     <img src={`/assets/images/Muros/${imagenes.muros}.png`} alt='' className='w-full absolute z-20' />
                     <img src={`/assets/images/Salpicaderos/${imagenes.salpicaderos}.png`} alt='' className='w-full absolute z-20' />
                     <img src={`/assets/images/Mueble Alto/${imagenes.mueblealto}.png`} alt='' className='w-full absolute z-20' />

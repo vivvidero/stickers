@@ -24,11 +24,11 @@ export const Caracteristicas = () => {
 
 
     return (
-        <nav className="w-44">
-            <ul className="flex flex-col gap-2 w-full">
+        <nav>
+            <ul className="flex flex-wrap gap-2 w-full p-3 bg-vivvi rounded-xl">
                 {caracteristicas[zona]?.map((carac: string) => {
                     return (
-                        <button key={carac} name={carac} onClick={handleImagen} className="bg-slate-400  p-4 rounded-md hover:bg-slate-900 hover:text-white"> {carac} </button>
+                        <button key={carac} name={carac} onClick={handleImagen} className="bg-dorado p-2 rounded-md hover:bg-slate-900 hover:text-white"> {carac} </button>
                     )
                 })}
             </ul>

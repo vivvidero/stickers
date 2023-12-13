@@ -1,5 +1,5 @@
 import { FC, ReactNode } from "react"
-import { Sidebar } from "../../components"
+import { Header } from "../../components"
 
 interface Props {
     children: ReactNode
@@ -7,9 +7,12 @@ interface Props {
 
 export const MainLayout: FC<Props> = ({ children }) => {
     return (
-        <main className='w-full h-screen bg-slate-300 p-4 flex flex-col md:flex-row gap-3'>
-            <Sidebar />
-            {children}
+        <main className='w-full min-h-screen p-4 flex flex-col gap-3'>
+            <Header />
+            <section className="flex flex-col gap-3 h-screen">
+               {/*  <Sidebar /> */}
+                {children}
+            </section>
         </main>
     )
 }
