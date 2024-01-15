@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { Navigate, useParams } from "react-router-dom"
 import { caracteristicas } from "../../data/caracteristicas"
 import { useContext } from 'react'
 import { ImagenesContext } from "../../context/ImagenesContext"
@@ -22,6 +22,10 @@ export const Caracteristicas = () => {
 
     }
 
+
+    if (!element) {
+        return <Navigate to={'/'} />
+    }
 
     return (
         <nav>
